@@ -1,0 +1,448 @@
+Sub voltas_open_pending_calls_macro()
+'
+' voltas_open_pending_calls_macro Macro
+' voltas_open_pending_calls_macro
+'
+
+'
+    Columns("A:A").Select
+    Selection.Insert Shift:=xlToRight
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "SL No."
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("A2").Select
+    Selection.End(xlDown).Select
+    Selection.End(xlUp).Select
+    Range("A2:A62").Select
+    ActiveWindow.SmallScroll Down:=-81
+    Columns("B:B").Select
+    Selection.ColumnWidth = 5.57
+    Selection.ColumnWidth = 4.43
+    Selection.ColumnWidth = 3
+    Columns("A:A").ColumnWidth = 3.71
+    Columns("C:C").ColumnWidth = 10.29
+    Columns("C:C").ColumnWidth = 12
+    Columns("D:D").ColumnWidth = 14.14
+    Columns("D:D").ColumnWidth = 17.86
+    Columns("E:E").ColumnWidth = 17.57
+    Columns("F:F").Select
+    Selection.Delete Shift:=xlToLeft
+    Columns("I:I").Select
+    Selection.Delete Shift:=xlToLeft
+    Columns("K:K").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    ActiveWindow.SmallScroll Down:=-15
+    Selection.ColumnWidth = 15.29
+    Columns("K:K").Select
+    Selection.Delete Shift:=xlToLeft
+    Range("M1").Select
+    Columns("L:L").ColumnWidth = 13.71
+    ActiveWindow.SmallScroll Down:=-18
+    Columns("L:L").Select
+    Selection.ColumnWidth = 12.57
+    Columns("M:M").ColumnWidth = 9.86
+    Columns("N:N").Select
+    Range("N2").Activate
+    Selection.Delete Shift:=xlToLeft
+    Columns("N:N").Select
+    Range("N2").Activate
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("T:T").Select
+    Range("T2").Activate
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("U:U").Select
+    Range("U2").Activate
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.ColumnWidth = 11.29
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    Selection.ColumnWidth = 13.57
+    Selection.NumberFormat = "m/d/yyyy"
+    Selection.ColumnWidth = 7.57
+    Selection.ColumnWidth = 9.43
+    Columns("V:V").ColumnWidth = 25.43
+    Columns("V:V").ColumnWidth = 35.71
+    Columns("P:P").ColumnWidth = 24.29
+    Columns("P:P").ColumnWidth = 16.29
+    Columns("V:V").Select
+    Selection.Delete Shift:=xlToLeft
+    Range("P1").Select
+    Columns("N:N").ColumnWidth = 13.86
+    Columns("M:M").ColumnWidth = 11.29
+    Columns("P:P").ColumnWidth = 26.29
+    Columns("Q:Q").ColumnWidth = 14.14
+    Columns("Q:Q").ColumnWidth = 16
+    Columns("R:R").ColumnWidth = 14.86
+    Columns("S:S").ColumnWidth = 13.57
+    Columns("Q:Q").Select
+    Selection.ColumnWidth = 13
+    Columns("V:V").Select
+    Selection.Delete Shift:=xlToLeft
+    Columns("W:W").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("X:X").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("W:W").ColumnWidth = 21.29
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    Columns("W:W").ColumnWidth = 30.14
+    Range("W7").Select
+    ActiveWindow.SmallScroll Down:=-6
+    Range("A1:W62").Select
+    Range("A2").Activate
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "FU"
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "N"
+    Range("H1").Select
+    ActiveCell.FormulaR1C1 = "Status"
+    Range("I1").Select
+    ActiveCell.FormulaR1C1 = "Phone"
+    Range("N1").Select
+    ActiveCell.FormulaR1C1 = "Category"
+    Range("U1").Select
+    ActiveCell.FormulaR1C1 = "APT Date"
+    Range("X1").Select
+    Columns("W:W").ColumnWidth = 32.71
+    Range("A1:W62").Select
+    Range("U2").Activate
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("V1:W1").Select
+    Range("W1").Activate
+    Range(Selection, Selection.End(xlToLeft)).Select
+    Selection.Font.Bold = True
+    Range("A1").Select
+    Columns("D:D").ColumnWidth = 15
+    Columns("E:E").ColumnWidth = 13
+    Columns("F:F").ColumnWidth = 3.43
+    Columns("H:H").ColumnWidth = 8.86
+    Columns("I:I").ColumnWidth = 10.14
+    Columns("C:C").ColumnWidth = 11.43
+    Range("K1").Select
+    ActiveCell.FormulaR1C1 = "Mobile Update"
+    Range("K1").Select
+    Selection.Font.Size = 10
+    Selection.Font.Size = 9
+    Selection.Font.Size = 8
+    Selection.Font.Size = 9
+    Selection.Font.Size = 10
+    Selection.Font.Size = 11
+    Selection.Font.Size = 12
+    Selection.Font.Size = 11
+    Selection.Font.Size = 10
+    Selection.Font.Size = 9
+    Range("A1:W62").Select
+    Range("K3").Activate
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlCenter
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("H4").Select
+    Columns("H:H").ColumnWidth = 9.86
+    Range("I3").Select
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    Columns("K:K").ColumnWidth = 7.43
+    Columns("K:K").ColumnWidth = 6.43
+    Columns("K:K").ColumnWidth = 5.43
+    Columns("K:K").ColumnWidth = 3.71
+    Range("K1").Select
+    Selection.Font.Size = 8
+    Columns("K:K").ColumnWidth = 4.86
+    Range("K2").Select
+    ActiveWindow.SmallScroll Down:=-15
+    Range("X1").Select
+    ActiveWindow.SmallScroll Down:=-42
+    Range("W1").Select
+    Range(Selection, Selection.End(xlToLeft)).Select
+    Range(Selection, Selection.End(xlToLeft)).Select
+    Selection.AutoFilter
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Add Key:=Range _
+        ("F1"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption:= _
+        xlSortNormal
+    With ActiveWorkbook.Worksheets("output").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    Range("G3").Select
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Add Key:=Range _
+        ("F1"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:= _
+        xlSortNormal
+    With ActiveWorkbook.Worksheets("output").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    Range("G4").Select
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Add Key:=Range _
+        ("F1"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption:= _
+        xlSortNormal
+    With ActiveWorkbook.Worksheets("output").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    Range("F3").Select
+    ActiveWindow.SmallScroll Down:=-15
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 16
+    ActiveWindow.ScrollColumn = 17
+    ActiveWindow.ScrollColumn = 18
+    ActiveWindow.ScrollColumn = 19
+    ActiveWindow.ScrollColumn = 20
+    ActiveWindow.ScrollColumn = 19
+    ActiveWindow.ScrollColumn = 18
+    ActiveWindow.ScrollColumn = 17
+    ActiveWindow.ScrollColumn = 16
+    Columns("V:V").ColumnWidth = 9
+    Range("V1").Select
+    Selection.Font.Size = 10
+    Selection.Font.Size = 9
+    Selection.Font.Size = 8
+    Selection.Font.Size = 9
+    Selection.Font.Size = 10
+    Selection.Font.Size = 11
+    Range("R4").Select
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 16
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.SmallScroll Down:=-15
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Range("A2").Select
+    ActiveWindow.SmallScroll Down:=-12
+    ActiveCell.FormulaR1C1 = "1"
+    Range("A3").Select
+End Sub
