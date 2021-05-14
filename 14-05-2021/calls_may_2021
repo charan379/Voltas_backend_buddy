@@ -1,0 +1,772 @@
+Sub calls_may_2021()
+'
+' calls_may_2021 Macro
+'
+
+'
+    Range("E8").Select
+    ActiveWindow.SmallScroll Down:=-12
+    Range("A1:AV76").Select
+    Range("E8").Activate
+    Selection.Columns.AutoFit
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "FUP"
+    Cells.Select
+    Range("C2").Activate
+    Selection.Columns.AutoFit
+    Columns("C:C").Select
+    Range("C3").Activate
+    Selection.ColumnWidth = 15
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("E:E").Select
+    Range("E3").Activate
+    Selection.ColumnWidth = 10
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Selection.ColumnWidth = 13
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "Registered"
+    Range("G1").Select
+    ActiveCell.FormulaR1C1 = "Alternate"
+    Columns("F:G").Select
+    Range("G2").Activate
+    Selection.Columns.AutoFit
+    Columns("H:H").Select
+    Range("H2").Activate
+    Selection.ColumnWidth = 10
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("I:J").Select
+    Range("I2").Activate
+    Selection.Columns.AutoFit
+    ActiveWindow.SmallScroll Down:=-15
+    Columns("K:K").Select
+    Range("K5").Activate
+    Selection.ColumnWidth = 20
+    Selection.ColumnWidth = 25
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("M:M").Select
+    Range("M5").Activate
+    Selection.ColumnWidth = 10
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("N:N").Select
+    Range("N5").Activate
+    Selection.ColumnWidth = 10
+    Range("N1").Select
+    ActiveCell.FormulaR1C1 = "Category"
+    Columns("N:N").Select
+    Range("N2").Activate
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Selection.ColumnWidth = 12
+    Columns("O:O").Select
+    Range("O2").Activate
+    Selection.ColumnWidth = 6
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("O1").Select
+    ActiveCell.FormulaR1C1 = "Owner"
+    Columns("P:P").Select
+    Columns("O:O").ColumnWidth = 7.14
+    Columns("O:O").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("P:P").Select
+    Selection.ColumnWidth = 8
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Selection.ColumnWidth = 9.14
+    Columns("P:P").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("P1").Select
+    ActiveCell.FormulaR1C1 = "Status"
+    Columns("Q:Q").Select
+    Range("Q2").Activate
+    Selection.ColumnWidth = 13.29
+    Columns("Q:Q").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("R:R").ColumnWidth = 18
+    Columns("R:R").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Selection.ColumnWidth = 19
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    Selection.ColumnWidth = 19.71
+    Columns("R:R").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("T1").Select
+    Columns("S:S").ColumnWidth = 15.43
+    Columns("S:S").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    ActiveWindow.SmallScroll Down:=-24
+    Selection.ColumnWidth = 22
+    Columns("S:S").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("W1").Select
+    ActiveWindow.SmallScroll Down:=-30
+    Range("AL1").Select
+    ActiveWindow.SmallScroll Down:=42
+    ActiveWindow.ScrollColumn = 36
+    ActiveWindow.ScrollColumn = 37
+    ActiveWindow.SmallScroll Down:=-78
+    ActiveWindow.ScrollColumn = 36
+    ActiveWindow.ScrollColumn = 35
+    ActiveWindow.ScrollColumn = 34
+    ActiveWindow.ScrollColumn = 33
+    ActiveWindow.ScrollColumn = 32
+    ActiveWindow.ScrollColumn = 31
+    ActiveWindow.ScrollColumn = 30
+    ActiveWindow.ScrollColumn = 29
+    ActiveWindow.ScrollColumn = 28
+    ActiveWindow.ScrollColumn = 27
+    Range("AK2").Select
+    Columns("AJ:AJ").ColumnWidth = 26.57
+    Columns("AJ:AJ").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Selection.ColumnWidth = 21.86
+    Columns("AK:AK").ColumnWidth = 17.57
+    Columns("AK:AK").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("AL:AL").ColumnWidth = 21
+    Columns("AL:AL").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("AM:AM").ColumnWidth = 10.29
+    Columns("AM:AM").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Selection.ColumnWidth = 11.71
+    Columns("AN:AN").ColumnWidth = 8.71
+    Columns("AN:AN").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("AM:AM").ColumnWidth = 12.57
+    Columns("AO:AO").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("AP:AP").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("AV1").Select
+    Range(Selection, Selection.End(xlToLeft)).Select
+    Selection.Font.Bold = True
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 65535
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Application.PrintCommunication = False
+    With ActiveSheet.PageSetup
+        .PrintTitleRows = ""
+        .PrintTitleColumns = ""
+    End With
+    Application.PrintCommunication = True
+    ActiveSheet.PageSetup.PrintArea = ""
+    Application.PrintCommunication = False
+    With ActiveSheet.PageSetup
+        .LeftHeader = ""
+        .CenterHeader = ""
+        .RightHeader = ""
+        .LeftFooter = ""
+        .CenterFooter = ""
+        .RightFooter = ""
+        .LeftMargin = Application.InchesToPoints(0.7)
+        .RightMargin = Application.InchesToPoints(0.7)
+        .TopMargin = Application.InchesToPoints(0.75)
+        .BottomMargin = Application.InchesToPoints(0.75)
+        .HeaderMargin = Application.InchesToPoints(0.3)
+        .FooterMargin = Application.InchesToPoints(0.3)
+        .PrintHeadings = False
+        .PrintGridlines = False
+        .PrintComments = xlPrintNoComments
+        .PrintQuality = 600
+        .CenterHorizontally = False
+        .CenterVertically = False
+        .Orientation = xlLandscape
+        .Draft = False
+        .PaperSize = xlPaperA4
+        .FirstPageNumber = xlAutomatic
+        .Order = xlDownThenOver
+        .BlackAndWhite = False
+        .Zoom = 100
+        .PrintErrors = xlPrintErrorsDisplayed
+        .OddAndEvenPagesHeaderFooter = False
+        .DifferentFirstPageHeaderFooter = False
+        .ScaleWithDocHeaderFooter = True
+        .AlignMarginsHeaderFooter = True
+        .EvenPage.LeftHeader.Text = ""
+        .EvenPage.CenterHeader.Text = ""
+        .EvenPage.RightHeader.Text = ""
+        .EvenPage.LeftFooter.Text = ""
+        .EvenPage.CenterFooter.Text = ""
+        .EvenPage.RightFooter.Text = ""
+        .FirstPage.LeftHeader.Text = ""
+        .FirstPage.CenterHeader.Text = ""
+        .FirstPage.RightHeader.Text = ""
+        .FirstPage.LeftFooter.Text = ""
+        .FirstPage.CenterFooter.Text = ""
+        .FirstPage.RightFooter.Text = ""
+    End With
+    Application.PrintCommunication = True
+    ActiveWindow.View = xlPageBreakPreview
+    ActiveSheet.VPageBreaks(1).DragOff Direction:=xlToRight, RegionIndex:=1
+    ActiveWindow.ScrollColumn = 29
+    ActiveWindow.ScrollColumn = 24
+    ActiveWindow.ScrollColumn = 20
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.View = xlNormalView
+    Range("J3").Select
+End Sub
+
+Sub open_af_all_calls_refiner_may_2021()
+'
+' open_af_all_calls_refiner_may_2021 Macro
+'
+
+'
+    Range("A1:AV76").Select
+    Range("E3").Activate
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("D4").Select
+    ActiveWindow.SmallScroll Down:=-36
+    Range("A1:AV76").Select
+    Range("E3").Activate
+    Selection.AutoFilter
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("output").AutoFilter.Sort.SortFields.Add Key:=Range _
+        ("D1:D76"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption:= _
+        xlSortNormal
+    With ActiveWorkbook.Worksheets("output").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+    Columns("D:D").Select
+    Selection.FormatConditions.Add Type:=xlCellValue, Operator:=xlGreater, _
+        Formula1:="=1"
+    Selection.FormatConditions(Selection.FormatConditions.Count).SetFirstPriority
+    With Selection.FormatConditions(1).Font
+        .Color = -16383844
+        .TintAndShade = 0
+    End With
+    With Selection.FormatConditions(1).Interior
+        .PatternColorIndex = xlAutomatic
+        .Color = 13551615
+        .TintAndShade = 0
+    End With
+    Selection.FormatConditions(1).StopIfTrue = False
+    ActiveWindow.SmallScroll Down:=0
+    Columns("A:A").Select
+    Selection.FormatConditions.Add Type:=xlCellValue, Operator:=xlGreater, _
+        Formula1:="=0"
+    Selection.FormatConditions(Selection.FormatConditions.Count).SetFirstPriority
+    With Selection.FormatConditions(1).Font
+        .Color = -16383844
+        .TintAndShade = 0
+    End With
+    With Selection.FormatConditions(1).Interior
+        .PatternColorIndex = xlAutomatic
+        .Color = 13551615
+        .TintAndShade = 0
+    End With
+    Selection.FormatConditions(1).StopIfTrue = False
+    Columns("I:I").Select
+    Range("I2").Activate
+    ActiveWindow.SmallScroll Down:=-24
+    Columns("L:L").Select
+    Range("L2").Activate
+    Selection.Delete Shift:=xlToLeft
+    Range("N2").Select
+    Columns("N:N").ColumnWidth = 10
+    Columns("N:N").Select
+    With Selection
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("P:P").Select
+    Selection.Delete Shift:=xlToLeft
+    Range("R1").Select
+    ActiveWindow.SmallScroll Down:=-18
+    Columns("V:V").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("W:W").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("X:X").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("Z:Z").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Range("A1").Select
+    ActiveWindow.SmallScroll Down:=-45
+    Range("I3").Select
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 20
+    ActiveWindow.ScrollColumn = 21
+    ActiveWindow.ScrollColumn = 22
+    ActiveWindow.ScrollColumn = 24
+    ActiveWindow.ScrollColumn = 25
+    ActiveWindow.ScrollColumn = 26
+    ActiveWindow.ScrollColumn = 27
+    ActiveWindow.ScrollColumn = 28
+    ActiveWindow.ScrollColumn = 26
+    ActiveWindow.ScrollColumn = 23
+    ActiveWindow.ScrollColumn = 20
+    ActiveWindow.ScrollColumn = 17
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    Columns("Q:Q").ColumnWidth = 16
+    ActiveWindow.SmallScroll Down:=21
+    Range("Q27").Select
+    ActiveWindow.SmallScroll Down:=30
+    Range("Q58").Select
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.SmallScroll Down:=-60
+    ActiveWindow.View = xlPageBreakPreview
+    ActiveWindow.SmallScroll Down:=-84
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.View = xlNormalView
+    ActiveWindow.SmallScroll Down:=-114
+    Range("H2").Select
+  
+    
+End Sub
+
+
+
