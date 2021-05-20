@@ -1,0 +1,66 @@
+Sub service_payoout()
+'
+' service_payoout Macro
+'
+
+'
+    Range("A1:AA30").Select
+    Selection.Columns.AutoFit
+    Columns("I:I").Select
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Range("I1").Select
+    Selection.End(xlDown).Select
+    Selection.End(xlUp).Select
+    Columns("Q:Q").Select
+    Selection.NumberFormat = "General"
+    Selection.NumberFormat = "0.00"
+    Columns("V:V").Select
+    Range("V7").Activate
+    Selection.Delete Shift:=xlToLeft
+    Range("U7").Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlUp).Select
+    Selection.End(xlDown).Select
+    Selection.End(xlUp).Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 65535
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    ActiveWindow.SmallScroll Down:=-21
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Range("H11").Select
+End Sub
