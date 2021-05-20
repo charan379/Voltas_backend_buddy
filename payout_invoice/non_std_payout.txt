@@ -1,0 +1,53 @@
+Sub Non_std_payout()
+'
+' Non_std_payout Macro
+'
+
+'
+    Range("A1:Y14").Select
+    Range("F6").Activate
+    Selection.Columns.AutoFit
+    Columns("I:I").Select
+    Range("I6").Activate
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Selection.Delete Shift:=xlToLeft
+    Columns("K:K").Select
+    Range("K6").Activate
+    Selection.Insert Shift:=xlToRight
+    Range("K1").Select
+    ActiveCell.FormulaR1C1 = "Updated By"
+    Columns("U:U").Select
+    Range("U2").Activate
+    Selection.Delete Shift:=xlToLeft
+    Range("T2").Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Range("A1").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 65535
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("D6").Select
+End Sub
