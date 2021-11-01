@@ -1,1 +1,6 @@
 =IF(J2+L2=0,"Non Part Call",IF(L2+J2=2,"Part + Gas Call",IF(J2=1,"Gas Call",IF(L2=1,"Part Call",""))))
+
+
+To Find Duplicate Values
+
+=IF(COUNTIF(A:A,A2)>1,"Duplicate","Unique")
