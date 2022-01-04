@@ -1388,6 +1388,25 @@ With ActiveSheet.Range("A1", Cells(1, Columns.Count).End(xlToRight)).SpecialCell
   .Font.Bold = True
 End With
   xRgUni_SR.EntireColumn.Activate
+  
+  ' Page layout set up
+  With ActiveSheet.PageSetup
+     .Orientation = xlLandscape
+     .PaperSize = xlPaperA4
+     '.Zoom = 80
+     .Zoom = False
+     .FitToPagesTall = False
+     .FitToPagesWide = False
+     .LeftMargin = Application.InchesToPoints(0.35)
+    .RightMargin = Application.InchesToPoints(0.35)
+    .TopMargin = Application.InchesToPoints(0.35)
+    .BottomMargin = Application.InchesToPoints(0.35)
+     .HeaderMargin = Application.InchesToPoints(0.35)
+     .FooterMargin = Application.InchesToPoints(0.35)
+     
+    
+     
+End With
 End Sub
 
 
