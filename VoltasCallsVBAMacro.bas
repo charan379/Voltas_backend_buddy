@@ -1387,7 +1387,7 @@ With ActiveSheet.Range("A1", Cells(1, Columns.Count).End(xlToRight)).SpecialCell
   .Interior.ColorIndex = 6
   .Font.Bold = True
 End With
-  xRgUni_SR.EntireColumn.Activate
+  xRgUni_SR.Activate
   
   ' Page layout set up
   With ActiveSheet.PageSetup
