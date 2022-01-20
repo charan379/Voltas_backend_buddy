@@ -7,6 +7,7 @@ Dim a As Long, w As Long, vDELCOLs As Variant, vCOLNDX As Variant
 vDELCOLs = Array("SR Closed Date", "Godam Defect Serial #", "Spare Invoice Number", "Spare Invoice Status", "Spare Invoice Date", "Revised Manual Challan", "Order Line Item#", "SAP Order Type", "SAP Order Ref", "SR Unit Status", "Order Date", "SAP Submission Date", "Line Item Status", "Order Header Status", "Attachment", "Godam Docket", "SAP Inbound Doc Num", "SAP PO Num", "SAP PO Date", "Org part INV Num", "Org part INV Value", "Spares FPO Value", "HO Remarks", "Sr Purchase Date", "Ok Part Serial Num", "SF Type", "Claim Date", "Claim Reason", "Self Courier", "Quantity Requested", "Related Product", "Related Product Name", "Error Log", "Transport", "SR Call Type", "Submitted By", "Submitted Time", "Branch Code", "SR Status")
 With ThisWorkbook
     For w = 1 To .Worksheets.count
+        'With ActiveSheet.UsedRange  'Use This For ActiveSheet Deletions
         With Worksheets(w)
             For a = LBound(vDELCOLs) To UBound(vDELCOLs)
                 vCOLNDX = Application.Match(vDELCOLs(a), .Rows(1), 0)
