@@ -6,6 +6,7 @@ Dim a As Long, w As Long, vDELCOLs As Variant, vCOLNDX As Variant
 vDELCOLs = Array("SR Processing Status", "Row Id", "Order Description", "SA Type", "Deallocate Reason", "Row Id", "Returnable", "Part #", "SR Open Date", "SR Close Date", "Spare Invoice #", "Spare Invoice Date", "Spare Invoice Status", "Parent Invoice #", "Rejected By", "SF Age", "Challan Age", "Line Item Creation Date", "Capacity", "Created by Division", "Product Group", "H Status", "Type", "SAP Contract #", "L Status", "Contract Type", "Agreement", "Address", "Cancel Reason", "Customer Comments", "Remarks", "Escalation", "Severity", "VIP", "Mobile Update", "Defect Part #", "Defect Part Name", "Defect Return Status", "Manager", "Gas Charge Done Flag", "Part Required Flag", "Part Replaced Flag", "House #", "Building", "Road", "State", "Closure Code", "Purchased From", "Purchased From Free", "Last Modified By", "RT", "DT", "Attend time", "Appointment Date", "Serial# Source", "Split Serial# Source", "Serial Source Updated", "Split Serial Source Updated", "NPS Score", "Email Add", "Purchase Date")
 With ThisWorkbook
     For w = 1 To .Worksheets.count
+        'With ActiveSheet.UsedRange  'Use This For ActiveSheet
         With Worksheets(w)
             For a = LBound(vDELCOLs) To UBound(vDELCOLs)
                 vCOLNDX = Application.Match(vDELCOLs(a), .Rows(1), 0)
