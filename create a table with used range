@@ -1,0 +1,16 @@
+Sub TableWithoutStryle()
+Dim Trange As range
+Dim Ws As Worksheet
+
+Set Ws = ThisWorkbook.Sheets("Sheet Name")
+
+'For active sheet
+'Set Ws = ThisWorkbook.ActiveSheet
+
+Set Trange = ActiveSheet.UsedRange
+
+
+Ws.ListObjects.Add(xlSrcRange, Trange, , xlYes).Name = "Table Name"
+   Ws.ListObjects("Table Name").TableStyle = ""
+    Ws.ListObjects("Table Name").ShowAutoFilterDropDown = True
+End Sub
