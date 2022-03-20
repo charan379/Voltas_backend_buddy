@@ -60,7 +60,7 @@ End With
     End If
     xRgUni_SR.EntireColumn.Activate
      With xRgUni_SR.EntireColumn
-        .AutoFit
+        .ColumnWidth = 15
         .HorizontalAlignment = xlCenter
         .VerticalAlignment = xlCenter
         .WrapText = True
