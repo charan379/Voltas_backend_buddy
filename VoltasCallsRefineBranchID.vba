@@ -4,19 +4,19 @@ Sub VoltasCallsFormaterExcelBranchID()
 Dim a As Long, w As Long, vDELCOLs As Variant, vCOLNDX As Variant
 vDELCOLs = Array("Symptom", "SR Value", "SC", "SC Band", "Threshold Value", "Total Value", "Manager", "Survey", "Survey Date", "UPBG Zone", "Deallocate Reason", "Row Id", "Commission Msg", "Created By", "TCR#", "TCR Date", "Mood of the customer", "Contact #", "TAT", "TAT Band", "Contact", "Fee Amount", "Program #", "EC", "Capacity", "Created by Division", "Product Group", "Calling from Number", "Type", "SAP Contract #", "Contract Type", "Agreement", "Address", "Cancel Reason", "Customer Comments", "Remarks", "Escalation", "Severity", "VIP", "Mobile Update", "Gas Charge Req Flag", "Audit Type", "Audit Date", "Purchased From Type", "Gas Charge Done Flag", "Part Required Flag", "Part Replaced Flag", "House #", "Building", "Road", "State", "Closure Code", "Purchased From", "Purchased From Free", "Last Modified By", "RT", "DT", "Attend time", "Appointment Date", "Serial# Source", "Split Serial# Source", "Serial Source Updated", "Split Serial Source Updated", "NPS Score", "Email Add", "Purchase Date")
 With ThisWorkbook
-    For w = 1 To .Worksheets.Count
-    'With ActiveSheet.UsedRange  'Use This For ActiveSheet
-        With Worksheets(w)
+    'For w = 1 To .Worksheets.Count
+     With ActiveSheet.UsedRange  'Use This For ActiveSheet
+        'With Worksheets(w)
             For a = LBound(vDELCOLs) To UBound(vDELCOLs)
                 vCOLNDX = Application.Match(vDELCOLs(a), .Rows(1), 0)
                 If Not IsError(vCOLNDX) Then
                     .Columns(vCOLNDX).EntireColumn.Delete
                 End If
             Next a
-        End With
-    Next w
+        'End With
+    'Next w
 End With
-
+End With
 'Delete not required columns end
 
 'Delete not required columns 2nd array
@@ -24,17 +24,18 @@ End With
 Dim a_b As Long, w_b As Long, vDELCOLs_b As Variant, vCOLNDX_b As Variant
 vDELCOLs_b = Array("Service Agent #", "Invalid Code Remarks", "Organization", "External SR No", "Activation Key", "Promo Code", "Last Visit Date", "Tech Id", "FLS", "Closure Code Status", "ReOpen Count", "WTA/PR SR#", "WTA SR Status", "WTA Email Status")
 With ThisWorkbook
-    For w_b = 1 To .Worksheets.Count
-    'With ActiveSheet.UsedRange  'Use This For ActiveSheet
-        With Worksheets(w_b)
+    'For w_b = 1 To .Worksheets.Count
+    With ActiveSheet.UsedRange  'Use This For ActiveSheet
+        'With Worksheets(w_b)
             For a_b = LBound(vDELCOLs_b) To UBound(vDELCOLs_b)
                 vCOLNDX_b = Application.Match(vDELCOLs_b(a_b), .Rows(1), 0)
                 If Not IsError(vCOLNDX_b) Then
                     .Columns(vCOLNDX_b).EntireColumn.Delete
                 End If
             Next a_b
-        End With
-    Next w_b
+       ' End With
+    'Next w_b
+End With
 End With
 
 'Delete not required columns end  2nd array
@@ -60,7 +61,7 @@ End With
     End If
     xRgUni_SR.EntireColumn.Activate
      With xRgUni_SR.EntireColumn
-        .ColumnWidth = 15
+        .AutoFit
         .HorizontalAlignment = xlCenter
         .VerticalAlignment = xlCenter
         .WrapText = True
@@ -1410,6 +1411,9 @@ End With
      
 End With
 End Sub
+
+
+
 
 
 
