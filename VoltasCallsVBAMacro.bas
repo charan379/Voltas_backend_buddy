@@ -22,7 +22,7 @@ End With
 'Delete not required columns 2nd array
 
 Dim a_b As Long, w_b As Long, vDELCOLs_b As Variant, vCOLNDX_b As Variant
-vDELCOLs_b = Array("External SR No", "Activation Key", "Promo Code", "Last Visit Date", "Tech Id", "FLS", "Closure Code Status", "ReOpen Count", "WTA/PR SR#", "WTA SR Status", "WTA Email Status")
+vDELCOLs_b = Array("Invalid Code Remarks", "Organization", "External SR No", "Activation Key", "Promo Code", "Last Visit Date", "Tech Id", "FLS", "Closure Code Status", "ReOpen Count", "WTA/PR SR#", "WTA SR Status", "WTA Email Status")
 With ThisWorkbook
     For w_b = 1 To .Worksheets.Count
 	'With ActiveSheet.UsedRange  'Use This For ActiveSheet
