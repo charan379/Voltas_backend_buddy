@@ -217,8 +217,8 @@ End With
         'Add first rule
         xRgUni_Fup_count.EntireColumn.FormatConditions.Add Type:=xlCellValue, Operator:=xlBetween, _
                 Formula1:="=2", Formula2:=" "
-        xRgUni_Fup_count.EntireColumn.FormatConditions(1).Interior.Color = RGB(255, 0, 0)
-        xRgUni_Fup_count.EntireColumn.FormatConditions(1).Font.Color = RGB(255, 255, 255)
+        xRgUni_Fup_count.EntireColumn.FormatConditions(1).Interior.Color = RGB(255, 105, 97) ' Light Red
+        xRgUni_Fup_count.EntireColumn.FormatConditions(1).Font.Color = RGB(0, 0, 0)
         xRgUni_Fup_count.EntireColumn.FormatConditions(1).Font.Bold = True
                 'Add second rule
         xRgUni_Fup_count.EntireColumn.FormatConditions.Add Type:=xlCellValue, Operator:=xlEqual, _
@@ -1411,6 +1411,7 @@ End With
      
 End With
 End Sub
+
 
 
 
