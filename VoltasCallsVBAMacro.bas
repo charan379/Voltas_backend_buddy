@@ -307,9 +307,9 @@ End With
 'Add first rule
 		xRgUni_age.EntireColumn.FormatConditions.Add Type:=xlCellValue, Operator:=xlBetween, _
 				Formula1:="=3", Formula2:=" "
-		xRgUni_age.EntireColumn.FormatConditions(1).Interior.Color = RGB(255, 0, 0)
-		xRgUni_age.EntireColumn.FormatConditions(1).Font.Color = RGB(255, 255, 255)
-        xRgUni_age.EntireColumn.FormatConditions(1).Font.Bold = True
+		xRgUni_age.EntireColumn.FormatConditions(1).Interior.Color = RGB(255,105,97)
+		xRgUni_age.EntireColumn.FormatConditions(1).Font.Color = RGB(0, 0, 0)
+        xRgUni_age.EntireColumn.FormatConditions(1).Font.Bold = False
 		'Add second rule
 		xRgUni_age.EntireColumn.FormatConditions.Add Type:=xlCellValue, Operator:=xlEqual, _
 				Formula1:="=2"
