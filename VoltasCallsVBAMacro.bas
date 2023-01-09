@@ -2,7 +2,7 @@ Sub VoltasCallsFormaterExcel()
 'Formats the CSV file from Vcare site into a ready made working format
 'Delete not required columns
 Dim a As Long, w As Long, vDELCOLs As Variant, vCOLNDX As Variant
-vDELCOLs = Array("Symptom", "SR Value", "SC", "SC Band", "Threshold Value", "Total Value", "Manager", "Survey", "Survey Date", "UPBG Zone", "Deallocate Reason", "Row Id", "Commission Msg", "Created By", "TCR#", "TCR Date", "Mood of the customer", "Contact #", "TAT", "TAT Band", "Contact", "Fee Amount", "Program #", "EC", "Capacity", "Created by Division", "Product Group", "Calling from Number", "Type", "SAP Contract #", "Contract Type", "Agreement", "Address", "Cancel Reason", "Customer Comments", "Remarks", "Escalation", "Severity", "VIP", "Mobile Update", "Gas Charge Req Flag", "Audit Type", "Audit Date", "Purchased From Type", "Gas Charge Done Flag", "Part Required Flag", "Part Replaced Flag", "House #", "Building", "Road", "State", "Closure Code", "Purchased From", "Purchased From Free", "Last Modified By", "RT", "DT", "Attend time", "Appointment Date", "Serial# Source", "Split Serial# Source", "Serial Source Updated", "Split Serial Source Updated", "NPS Score", "Email Add", "Purchase Date")
+vDELCOLs = Array("Symptom", "SR Value", "SC", "SC Band", "Threshold Value", "Total Value", "Manager", "Survey", "Survey Date", "UPBG Zone", "Deallocate Reason", "Row Id", "Commission Msg", "Created By", "TCR#", "TCR Date", "Mood of the customer", "Contact #", "TAT", "TAT Band", "Contact", "Fee Amount", "Program #", "EC", "Capacity", "Created by Division", "Product Group", "Calling from Number", "Type", "SAP Contract #", "Contract Type", "Agreement", "Address", "Cancel Reason", "Customer Comments", "Remarks", "Escalation", "Severity", "VIP", "Mobile Update", "Gas Charge Req Flag", "Audit Type", "Audit Date", "Purchased From Type", "Part Required Flag", "House #", "Building", "Road", "State", "Closure Code", "Purchased From", "Purchased From Free", "Last Modified By", "RT", "DT", "Attend time", "Appointment Date", "Serial# Source", "Split Serial# Source", "Serial Source Updated", "Split Serial Source Updated", "NPS Score", "Email Add", "Purchase Date")
 With ThisWorkbook
     For w = 1 To .Worksheets.Count
 	'With ActiveSheet.UsedRange  'Use This For ActiveSheet
@@ -22,7 +22,7 @@ End With
 'Delete not required columns 2nd array
 
 Dim a_b As Long, w_b As Long, vDELCOLs_b As Variant, vCOLNDX_b As Variant
-vDELCOLs_b = Array("Invalid Code Remarks", "Organization", "External SR No", "Activation Key", "Promo Code", "Last Visit Date", "Tech Id", "FLS", "Closure Code Status", "ReOpen Count", "WTA/PR SR#", "WTA SR Status", "WTA Email Status")
+vDELCOLs_b = Array("Invalid Code Remarks", "Organization", "External SR No", "Activation Key", "Promo Code", "Last Visit Date", "Tech Id", "FLS", "Closure Code Status", "ReOpen Count", "WTA/PR SR#", "WTA SR Status", "WTA Email Status","Ereceipt Status","Purchased From Code","External Ticket Id","SR Correction Flag","Model #")
 With ThisWorkbook
     For w_b = 1 To .Worksheets.Count
 	'With ActiveSheet.UsedRange  'Use This For ActiveSheet
@@ -199,7 +199,7 @@ End With
     'Application.CutCopyMode = False ' don't want an existing operation to interfere
     xRgUni_Fup_count.EntireColumn.Activate
      With xRgUni_Fup_count.EntireColumn
-        .ColumnWidth = 7.14
+        .ColumnWidth = 9
         .HorizontalAlignment = xlCenter
         .VerticalAlignment = xlCenter
         .WrapText = True
@@ -1155,7 +1155,7 @@ End With
     'Application.CutCopyMode = False ' don't want an existing operation to interfere
     xRgUni_Closed_Date.EntireColumn.Activate
      With xRgUni_Closed_Date.EntireColumn
-        .ColumnWidth = 8
+        .ColumnWidth = 12
         .HorizontalAlignment = xlCenter
         .VerticalAlignment = xlCenter
         .WrapText = True
@@ -1377,6 +1377,74 @@ End With
     End With
 'Find Action_Taken # column End
 
+'Find Gas_Charge_Done_Flag # column
+    Dim xRg_Gas_Charge_Done_Flag As Range
+    Dim xRgUni_Gas_Charge_Done_Flag As Range
+    Dim xAddress_Gas_Charge_Done_Flag As String
+    Dim xStr_Gas_Charge_Done_Flag As String
+    On Error Resume Next
+    xStr_Gas_Charge_Done_Flag = "Gas Charge Done Flag"
+    Set xRg_Gas_Charge_Done_Flag = ActiveSheet.UsedRange.Find(xStr_Gas_Charge_Done_Flag, , xlValues, xlWhole, , , True)
+    If Not xRg_Gas_Charge_Done_Flag Is Nothing Then
+        xAddress_Gas_Charge_Done_Flag = xRg_Gas_Charge_Done_Flag.Address
+        Do
+            Set xRg_Gas_Charge_Done_Flag = ActiveSheet.UsedRange.FindNext(xRg_Gas_Charge_Done_Flag)
+            If xRgUni_Gas_Charge_Done_Flag Is Nothing Then
+                Set xRgUni_Gas_Charge_Done_Flag = xRg_Gas_Charge_Done_Flag
+            Else
+                Set xRgUni_Gas_Charge_Done_Flag = Application.Union(xRgUni_Gas_Charge_Done_Flag, xRg_Gas_Charge_Done_Flag)
+            End If
+        Loop While (Not xRg_Gas_Charge_Done_Flag Is Nothing) And (xRg_Gas_Charge_Done_Flag.Address <> xAddress_Gas_Charge_Done_Flag)
+    End If
+    xRgUni_Gas_Charge_Done_Flag.EntireColumn.Activate
+     With xRgUni_Gas_Charge_Done_Flag.EntireColumn
+        .ColumnWidth = 9
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlCenter
+        .MergeCells = False
+    End With
+'Find Gas_Charge_Done_Flag # column End
+
+'Find Part_Replaced_Flag # column
+    Dim xRg_Part_Replaced_Flag As Range
+    Dim xRgUni_Part_Replaced_Flag As Range
+    Dim xAddress_Part_Replaced_Flag As String
+    Dim xStr_Part_Replaced_Flag As String
+    On Error Resume Next
+    xStr_Part_Replaced_Flag = "Part Replaced Flag"
+    Set xRg_Part_Replaced_Flag = ActiveSheet.UsedRange.Find(xStr_Part_Replaced_Flag, , xlValues, xlWhole, , , True)
+    If Not xRg_Part_Replaced_Flag Is Nothing Then
+        xAddress_Part_Replaced_Flag = xRg_Part_Replaced_Flag.Address
+        Do
+            Set xRg_Part_Replaced_Flag = ActiveSheet.UsedRange.FindNext(xRg_Part_Replaced_Flag)
+            If xRgUni_Part_Replaced_Flag Is Nothing Then
+                Set xRgUni_Part_Replaced_Flag = xRg_Part_Replaced_Flag
+            Else
+                Set xRgUni_Part_Replaced_Flag = Application.Union(xRgUni_Part_Replaced_Flag, xRg_Part_Replaced_Flag)
+            End If
+        Loop While (Not xRg_Part_Replaced_Flag Is Nothing) And (xRg_Part_Replaced_Flag.Address <> xAddress_Part_Replaced_Flag)
+    End If
+    xRgUni_Part_Replaced_Flag.EntireColumn.Activate
+     With xRgUni_Part_Replaced_Flag.EntireColumn
+        .ColumnWidth = 9
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlCenter
+        .MergeCells = False
+    End With
+'Find Part_Replaced_Flag # column End
+
 'Add Borders
  With ActiveSheet.UsedRange.Borders
         .LineStyle = xlContinuous
@@ -1406,13 +1474,5 @@ End With
      .HeaderMargin = Application.InchesToPoints(0.35)
      .FooterMargin = Application.InchesToPoints(0.35)
      
-    
-     
 End With
 End Sub
-
-
-
-
-
-
