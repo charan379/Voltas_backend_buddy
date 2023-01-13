@@ -4,3 +4,7 @@
 To Find Duplicate Values
 
 =IF(COUNTIF(A:A,A2)>1,"Duplicate","Unique")
+
+
+Non Standard
+=IF([@Distance]<25,0,IF([@Distance]<50,250,IF([@Distance]<90,350,450)))
